@@ -1,6 +1,6 @@
-import React, {useEffect,useRef} from 'react'
+import React, { useEffect, useRef } from 'react'
 import logo from '../../assets/images/logo.png'
-import {NavLink, Link} from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 const navLinks = [
   {
@@ -23,32 +23,34 @@ const navLinks = [
 
 const Header = () => {
   return (
-    <header >
-      <div>
-        <div>
+    <header className='heading flex items-center' >
+      <div className='container'>
+        <div className='flex items-center justify-between'>
 
           {/* ============ logo ============ */}
           <div>
-            <img src={logo} alt="" />
+            <img className='ml-36' src={logo} alt="" />
+            <p className='text-xl'>pakaya</p>
           </div>
 
           {/* ================= menu ================  */}
-          <div>
-            <ul>
-              {navLinks.map((link,index)=>(
+          <div className='navigation'>
+            <ul className='menu flex items-center gap-[2.7rem]'>
+              {navLinks.map((link, index) =>
                 <li key={index}>
                   <NavLink
-                   to={link.path}
-                   className={navClass =>
-                    navClass.isActive
-                    ? "text-primaryColor text-[16px] leading-7 font-[600]"
-                    : "text-textColor text-[16px] leading-7 font-[500] hover:text-primaryColor"
-                   }
+                    to={link.path}
+                    className={({ isActive }) =>
+                      isActive
+                        ? "text-primaryColor text-[16px] leading-7 font-[600]"
+                        : "text-textColor text-[16px] leading-7 font-[500] hover:text-primaryColor"
+                    }
                   >
                     {link.display}
                   </NavLink>
+
                 </li>
-              ))}
+              )}
             </ul>
           </div>
         </div>

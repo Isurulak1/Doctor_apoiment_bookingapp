@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
     section {
-       @apply py-[75px];
+        @apply py-[75px];
     }
 }
 
@@ -15,19 +14,20 @@
     }
 
     .btn {
-        @apply bg-primaryColor py-[15px] px-[35px] rounded-[50px] text-white font-[600] mt-[38px]
+        @apply bg-primaryColor py-[15px] px-[35px] rounded-[50px] text-white font-[600] mt-[38px];
     }
 
-    .heading{
-        @apply text-[44px] leading-[54px] font-[700] text-headingColor
+    .heading {
+        @apply text-[44px] leading-[54px] font-[700] text-headingColor;
     }
 
-    .text_para{
-        @apply text-[18px] leading-[30px] font-[400] text-textColor mt-[18px]
+    .text_para {
+        @apply text-[18px] leading-[30px] font-[400] text-textColor mt-[18px];
     }
 }
 
-@media only screen and (max-width: 1024px) {
+/* Using Tailwind's breakpoints */
+@media (max-width: 1024px) {
     .container {
         @apply w-full;
     }
@@ -37,11 +37,11 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .heading{
+@media (max-width: 768px) {
+    .heading {
         @apply text-[26px] leading-[36px];
     }
-    .text_para{
+    .text_para {
         @apply text-[16px] leading-7 mt-3;
     }
 }
