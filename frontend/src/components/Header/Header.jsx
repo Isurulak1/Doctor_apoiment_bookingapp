@@ -30,7 +30,6 @@ const Header = () => {
           {/* ============ logo ============ */}
           <div>
             <img className='ml-36' src={logo} alt="" />
-            <p className='text-xl'>pakaya</p>
           </div>
 
           {/* ================= menu ================  */}
