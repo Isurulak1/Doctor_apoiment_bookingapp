@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import logo from '../../assets/images/logo.png'
 import user_img from '../../assets/images/avatar-icon.png'
 import { NavLink, Link } from 'react-router-dom';
+import { BiMenu } from 'react-icons/bi' 
 
 const navLinks = [
   {
@@ -23,8 +24,14 @@ const navLinks = [
 ]
 
 const Header = () => {
+
+  const headerRef = useRef(null)
+  const menuRef = useRef(null)
+
+  
+
   return (
-    <header className='heading flex items-center' >
+    <header className="heading flex items-center bg-[url('./assets/images/mask.png')] bg-no-repeat bg-center bg-cover w-full h-[100px] leading-[100px]">/
       <div className='container'>
         <div className='flex items-center justify-between'>
 
@@ -57,7 +64,7 @@ const Header = () => {
           {/* ===================nav right================ */}
           <div className='flex items-center gap-4'>
 
-            <div>
+            <div className='hidden'>
               <Link to="/">
               <figure className='w-[35px] h-[35px] rounded-full cursor-pointer'>
                 <img src={user_img} className='w-full rounded-full' alt="" />
@@ -68,6 +75,10 @@ const Header = () => {
             <Link to='/login'>
             <button className=' bg-primaryColor text-sm py-2 px-6 text-white font-[600] h-[40px] flex items-center justify-center rounded-[50px] '>Login</button>
             </Link>
+
+            <span className='md:hidden'>
+              <BiMenu className='w-6 h-6 cursor-pointer'/>
+            </span>
 
           </div>
         </div>
