@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import logo from '../../assets/images/logo.png'
 import user_img from '../../assets/images/avatar-icon.png'
 import { NavLink, Link } from 'react-router-dom';
-import { BiMenu } from 'react-icons/bi' 
+import { BiMenu, BiWinkSmile } from 'react-icons/bi' 
 
 const navLinks = [
   {
@@ -28,10 +28,24 @@ const Header = () => {
   const headerRef = useRef(null)
   const menuRef = useRef(null)
 
-  
+  const handleStickyHeader = () => {
+    window.addEventListener('scroll',()=>{
+      if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
+        headerRef.current.classList.add('sticky_header')
+      }else{
+        headerRef.current.classList.remove('sticky_header')
+      }
+    })
+  }
+
+  useEffect(()=> {
+    handleStickyHeader()
+
+    return () => window.removeEventListener('scroll',handleStickyHeader)
+})
 
   return (
-    <header className="heading flex items-center bg-[url('./assets/images/mask.png')] bg-no-repeat bg-center bg-cover w-full h-[100px] leading-[100px]">/
+    <header className="heading flex items-center bg-[url('./assets/images/mask.png')] bg-no-repeat bg-center bg-cover w-full h-[100px] leading-[100px]" ref={headerRef}>
       <div className='container'>
         <div className='flex items-center justify-between'>
 
