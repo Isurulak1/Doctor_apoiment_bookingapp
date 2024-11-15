@@ -42,7 +42,9 @@ const Header = () => {
     handleStickyHeader()
 
     return () => window.removeEventListener('scroll',handleStickyHeader)
-})
+})  
+
+const toggleMenu = ()=> menuRef.current.classList.toggle('show_menu')
 
   return (
     <header className="heading flex items-center bg-[url('./assets/images/mask.png')] bg-no-repeat bg-center bg-cover w-full h-[100px] leading-[100px]" ref={headerRef}>
@@ -55,7 +57,7 @@ const Header = () => {
           </div>
 
           {/* ================= menu ================  */}
-          <div className='navigation'>
+          <div className='navigation' ref={menuRef} onClick={toggleMenu}>
             <ul className='menu flex items-center gap-[2.7rem]'>
               {navLinks.map((link, index) =>
                 <li key={index}>
@@ -90,7 +92,7 @@ const Header = () => {
             <button className=' bg-primaryColor text-sm py-2 px-6 text-white font-[600] h-[40px] flex items-center justify-center rounded-[50px] '>Login</button>
             </Link>
 
-            <span className='md:hidden'>
+            <span className='md:hidden' onClick={toggleMenu}>
               <BiMenu className='w-6 h-6 cursor-pointer'/>
             </span>
 
