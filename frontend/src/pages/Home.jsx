@@ -19,6 +19,36 @@ const Home = () => {
               </p>
               <button className='btn'>Request an Appointment</button>
             </div>
+
+            {/* ================ hero counter ============== */}
+            <div className='mt-[36px] lg:mt-[70px] flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-[30px]'>
+
+              <div>
+                <h2 className='text-[36px] leading-[56px] lg:text-[46px] lg:leading-[54px] font-[700] text-headingColor'>
+                  30+
+                </h2>
+                <span className='w-[100px] h-2 bg-yellowColor rounded-full block mt-[-14px]'></span>
+                <p className='text_para'>Year of Experience</p>
+              </div>
+
+              <div>
+                <h2 className='text-[36px] leading-[56px] lg:text-[46px] lg:leading-[54px] font-[700] text-headingColor'>
+                  15+
+                </h2>
+                <span className='w-[100px] h-2 bg-purpleColor rounded-full block mt-[-14px]'></span>
+                <p className='text_para'>Clinic Location</p>
+              </div>
+
+              <div>
+                <h2 className='text-[36px] leading-[56px] lg:text-[46px] lg:leading-[54px] font-[700] text-headingColor'>
+                  100%
+                </h2>
+                <span className='w-[100px] h-2 bg-irisBlueColor rounded-full block mt-[-14px]'></span>
+                <p className='text_para'>Patient Satisfaction</p>
+              </div>
+
+
+            </div>
           </div>
         </div>
       </div>
