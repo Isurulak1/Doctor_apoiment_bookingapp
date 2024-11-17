@@ -1,5 +1,9 @@
 import React from 'react'
 
+import heromimage from '../assets/images/hero-img01.png';
+import heroimg2 from '../assets/images/hero-img02.png';
+import heroimg3 from '../assets/images/hero-img03.png';
+
 const Home = () => {
   return (
    <>
@@ -50,6 +54,18 @@ const Home = () => {
 
             </div>
           </div>
+
+          {/* ====================hero cntent ================= */}
+          <div className='flex gap-[30px] justify-end'>
+            <div>
+              <img className='w-full' src={heromimage} alt="" />
+            </div>
+            <div className='mt-[30px]'>
+              <img className='w-full mb-[30px]' src={heroimg2} alt="" />
+              <img className='w-full' src={heroimg3} alt="" />
+            </div>
+          </div>
+
         </div>
       </div>
      </section> 

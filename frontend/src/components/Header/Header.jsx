@@ -53,7 +53,7 @@ const toggleMenu = ()=> menuRef.current.classList.toggle('show_menu')
 
           {/* ============ logo ============ */}
           <div>
-            <img className='ml-36' src={logo} alt="" />
+            <img src={logo} alt="" />
           </div>
 
           {/* ================= menu ================  */}
