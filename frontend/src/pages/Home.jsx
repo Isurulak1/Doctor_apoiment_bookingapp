@@ -127,6 +127,16 @@ const Home = () => {
     </section>
 
     <About/>
+    
+    {/* ===================== service section ============== */}
+    <section className='container'>
+       <div className='xl:w-[470px] mx-auto'>
+         <h2 className='heading text-center'>Our medical services</h2>
+         <p className='text_para text-center'>World class care for everyone. Our health System offerss unmatched</p>
+       </div>
+    </section>
+
+    {/* ===================== service section end ============== */}
    </>
   )
 }
