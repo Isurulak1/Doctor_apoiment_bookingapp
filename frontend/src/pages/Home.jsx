@@ -9,6 +9,7 @@ import icon03 from '../assets/images/icon03.png';
 import { Link } from 'react-router-dom';
 import { BsArrowRight} from 'react-icons/bs';
 import About from '../components/About/About';
+import SevicesList from '../components/Services/SevicesList';
 
 const Home = () => {
   return (
@@ -129,11 +130,14 @@ const Home = () => {
     <About/>
     
     {/* ===================== service section ============== */}
-    <section className='container'>
+    <section>
+      <div className='container'>
        <div className='xl:w-[470px] mx-auto'>
          <h2 className='heading text-center'>Our medical services</h2>
          <p className='text_para text-center'>World class care for everyone. Our health System offerss unmatched</p>
        </div>
+      <SevicesList/>
+      </div>
     </section>
 
     {/* ===================== service section end ============== */}
