@@ -201,6 +201,16 @@ const Home = () => {
         </div>
       </div>
     </section>
+
+    {/* ========================= our grade doctors =================== */}
+    <section>
+      <div className="container">
+        <div className='xl:w-[470px] mx-auto'>
+         <h2 className='heading text-center'>Our Great Doctors</h2>
+         <p className='text_para text-center'>World class care for everyone. Our health System offerss unmatched</p>
+       </div>
+      </div>
+    </section>
    </>
   )
 }
