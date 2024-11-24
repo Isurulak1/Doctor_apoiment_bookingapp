@@ -13,6 +13,7 @@ import { Link } from 'react-router-dom';
 import { BsArrowRight} from 'react-icons/bs';
 import About from '../components/About/About';
 import SevicesList from '../components/Services/SevicesList';
+import DoctorList from '../components/Doctors/DoctorList';
 
 const Home = () => {
   return (
@@ -209,6 +210,7 @@ const Home = () => {
          <h2 className='heading text-center'>Our Great Doctors</h2>
          <p className='text_para text-center'>World class care for everyone. Our health System offerss unmatched</p>
        </div>
+       <DoctorList/>
       </div>
     </section>
    </>
