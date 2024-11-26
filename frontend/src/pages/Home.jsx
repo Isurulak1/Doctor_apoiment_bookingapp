@@ -9,6 +9,7 @@ import icon03 from '../assets/images/icon03.png';
 import featureimg from '../assets/images/feature-img.png';
 import videoIcon from '../assets/images/video-icon.png';
 import avatarIcon from '../assets/images/avatar-icon.png';
+import faqImg from '../assets/images/faq-img.png';
 import { Link } from 'react-router-dom';
 import { BsArrowRight} from 'react-icons/bs';
 import About from '../components/About/About';
@@ -211,6 +212,17 @@ const Home = () => {
          <p className='text_para text-center'>World class care for everyone. Our health System offerss unmatched</p>
        </div>
        <DoctorList/>
+      </div>
+    </section>
+
+    {/* ======================= faq section ======================= */}
+    <section>
+      <div className='container'>
+        <div className='flex justify-between gap-[50px] lg:gap-0'>
+          <div className='w-1/2 hidden md:block'>
+            <img src={faqImg} alt="" />
+          </div>
+        </div>
       </div>
     </section>
    </>
