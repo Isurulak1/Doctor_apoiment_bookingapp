@@ -2,7 +2,7 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
-import { Pagination } from 'swiper'
+import {Pagination} from  'swiper/modules'
 import patientAvatar from '../../assets/images/patient-avatar.png'
 import {HiStar} from 'react-icons/hi'
 
@@ -33,6 +33,7 @@ const Testimonial = () => {
                 <h4 className='text-[18px] leading-[30px] font-semibold text-headingColor'>
                     Muhibar Raman
                 </h4>
+                
               </div>  
             </SwiperSlide>
         </Swiper>
