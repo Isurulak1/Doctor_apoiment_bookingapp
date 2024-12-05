@@ -96,6 +96,52 @@ const Footer = () => {
               )}
             </div>
           </div>
+
+          <div className='text-[20px] leading-[30px] font-[700] mb-6 text-headingColor'>
+            <h2>Quick Links</h2>
+            <ul>
+              {quickLinks01.map((item,index) => (
+                <li to={index} className='mb-4'>
+                  <Link to={item.path}
+                  className='text-[16px] leading-7 font-[400] text-textColor'
+                  >{item.display}
+                  </Link>
+                </li>
+              )
+
+              )}
+            </ul>
+          </div>
+          <div className='text-[20px] leading-[30px] font-[700] mb-6 text-headingColor'>
+            <h2>I Want to:</h2>
+            <ul>
+              {quickLinks02.map((item,index) => (
+                <li to={index} className='mb-4'>
+                  <Link to={item.path}
+                  className='text-[16px] leading-7 font-[400] text-textColor'
+                  >{item.display}
+                  </Link>
+                </li>
+              )
+
+              )}
+            </ul>
+          </div>
+          <div className='text-[20px] leading-[30px] font-[700] mb-6 text-headingColor'>
+            <h2>Support</h2>
+            <ul>
+              {quickLinks03.map((item,index) => (
+                <li to={index} className='mb-4'>
+                  <Link to={item.path}
+                  className='text-[16px] leading-7 font-[400] text-textColor'
+                  >{item.display}
+                  </Link>
+                </li>
+              )
+
+              )}
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
