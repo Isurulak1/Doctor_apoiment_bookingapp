@@ -13,7 +13,7 @@ import faqImg from '../assets/images/faq-img.png';
 import { Link } from 'react-router-dom';
 import { BsArrowRight} from 'react-icons/bs';
 import About from '../components/About/About';
-import SevicesList from '../components/Services/SevicesList';
+import SevicesList from '../components/Services/ServicesList';
 import DoctorList from '../components/Doctors/DoctorList';
 import FaqItem from '../components/Faq/FaqItem';
 import FaqList from '../components/Faq/FaqList';
@@ -246,6 +246,7 @@ const Home = () => {
           <p className='text_para text-center'>World class care for everyone. Our health System offerss unmatched</p>
         </div>
         <Testimonial/>
+        <SevicesList/>
       </div>
     </section>
    </>
