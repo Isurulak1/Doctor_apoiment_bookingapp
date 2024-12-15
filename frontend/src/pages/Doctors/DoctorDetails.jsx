@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import doctorImg from '../../assets/images/doctor-img02.png'
 import starIcon from '../../assets/images/Star.png'
 
 const DoctorDetails = () => {
+
+  const [tab,setTab] = useState('about')
+
   return (
     <section>
       <div className='max-w-[1170px] px-5 mx-auto'>
@@ -33,10 +36,14 @@ const DoctorDetails = () => {
             </div>
 
             <div className='mt-[50px] border-b border-solid border-[#0066f34]'>
-              <button className='py-2 px-5 mr-5 text-[16px] leading-7 text-headingColor font-semibold'>
+              <button
+               onClick={() => setTab('about')}
+               className='py-2 px-5 mr-5 text-[16px] leading-7 text-headingColor font-semibold'>
                 About
               </button>
-              <button className='py-2 px-5 mr-5 text-[16px] leading-7 text-headingColor font-semibold'>
+              <button
+                onClick={() => setTab('feedback')}
+               className='py-2 px-5 mr-5 text-[16px] leading-7 text-headingColor font-semibold'>
                 Feedback
               </button>
             </div>
