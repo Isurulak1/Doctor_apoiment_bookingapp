@@ -1,6 +1,7 @@
 import React from 'react'
 import avatar from '../../assets/images/avatar-icon.png'
 import { formatDate } from '../../utils/FormateDate'
+import {AiFillStar} from 'react-icons/ai'
 
 const Feedback = () => {
   return (
@@ -22,6 +23,11 @@ const Feedback = () => {
               <p className='text-[14px] leading-6 text-textColor'>{formatDate('02-14-2023')}</p>
               <p className='text_para mt-3 font-medium text-[15px] '>Good services, highly reccomended.</p>
             </div>
+          </div>
+          <div className='flex gap-1'>
+            {[ ...Array(5).keys()].map((_,index) => (
+              <AiFillStar key={index} color='#0067FF' />
+            ))}
           </div>
         </div>
       </div>
