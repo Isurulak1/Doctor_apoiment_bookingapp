@@ -5,6 +5,7 @@ const FeedBackForm = () => {
 
   const [rating, setRating] = useState(0)
   const [hover, setHover] = useState(0)
+  const [reveiewText, setReviewText] = useState("")
 
 
   return (
@@ -39,6 +40,24 @@ const FeedBackForm = () => {
         })}
       </div>
     </div>
+
+    <div>
+      <h3 className='text-headingColor text-[16px] leading-6 font-semibold mb-4'>
+        Share your feedback or suggestions
+      </h3>
+      
+      <textarea
+      className='border border-solid border-[#0066ff34] focus:outline outline-primaryColor w-full px-4 py-3 rounded-md'
+      rows="5"
+      placeholder='Write your feedback here...'
+      onChange={e => setReviewText(e.target.value)}
+      >
+      </textarea>
+    </div>
+
+    <button type='submit' className='btn'>
+      Submit Feedback
+    </button>
    </form>
   )
 }
