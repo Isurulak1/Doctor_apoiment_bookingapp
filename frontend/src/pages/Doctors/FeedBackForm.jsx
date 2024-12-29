@@ -7,6 +7,12 @@ const FeedBackForm = () => {
   const [hover, setHover] = useState(0)
   const [reveiewText, setReviewText] = useState("")
 
+  const handleSubmitReview = async e => {
+    e.preventDefault()
+
+    //later we will send this data to the server
+  }
+
 
   return (
    <form action="">
@@ -55,7 +61,7 @@ const FeedBackForm = () => {
       </textarea>
     </div>
 
-    <button type='submit' className='btn'>
+    <button type='submit' onClick={handleSubmitReview} className='btn'>
       Submit Feedback
     </button>
    </form>
