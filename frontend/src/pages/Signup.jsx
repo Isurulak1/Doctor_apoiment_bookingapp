@@ -15,10 +15,40 @@ const SignUp = () => {
           </div>
 
           {/* ========= sign up form ============ */}
-          <div>
-            <h3>
+          <div className='rounded-l-lg lg:pl-16 py-10'>
+            <h3 className='text-headingColor text-[22px] leading-9 font-bold mb-10'>
               Create an <span>account</span>
             </h3>
+
+            <form>
+              <div className='mb-5'>
+                <input 
+                type="text"
+                placeholder='Full Name' 
+                name='name'
+                value=''
+                className='w-full pr-4 py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-b-primaryColor text-[16px] leading-7 text-headingColor placeholder:text-textColor cursor-pointer'
+                />
+              </div>
+              <div className='mb-5'>
+                <input 
+                type="email"
+                placeholder='Enter your email' 
+                name='email'
+                value=''
+                className='w-full pr-4 py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-b-primaryColor text-[16px] leading-7 text-headingColor placeholder:text-textColor cursor-pointer'
+                />
+              </div>
+              <div className='mb-5'>
+                <input 
+                type="password"
+                placeholder='Enter your password' 
+                name='password'
+                value=''
+                className='w-full pr-4 py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-b-primaryColor text-[16px] leading-7 text-headingColor placeholder:text-textColor cursor-pointer'
+                />
+              </div>
+            </form>
           </div>
         </div>
       </div>
