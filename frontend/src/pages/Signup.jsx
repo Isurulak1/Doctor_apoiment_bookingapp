@@ -1,4 +1,5 @@
 import React from 'react'
+import avatar from '../assets/images/doctor-img01.png'
 
 import signupImg from '../assets/images/signup.gif'
 
@@ -45,8 +46,36 @@ const SignUp = () => {
                 placeholder='Enter your password' 
                 name='password'
                 value=''
-                className='w-full pr-4 py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-b-primaryColor text-[16px] leading-7 text-headingColor placeholder:text-textColor cursor-pointer'
+                className='w-full pr-4 py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-b-primaryColor text-[16px] leading-7 text-headingColor placeholder:text-textColor cursor-pointer' required
                 />
+              </div>
+              <div className='mb-5 flex items-center justify-between'>
+                <label
+                className='text-headingColor font-bold text-[16px] leading-7'
+                >
+                  Are you a:
+                  <select name="role" className='text-textColor font-semibold text-[15px] leading-7 px-4 py-3 focus:outline-none'>
+                    <option value="patient">Patient</option>
+                    <option value="doctor">Doctor</option>
+                  </select>
+                </label>
+                <label
+                className='text-headingColor font-bold text-[16px] leading-7'
+                >
+                  Gender:
+                  <select name="gender" className='text-textColor font-semibold text-[15px] leading-7 px-4 py-3 focus:outline-none'>
+                    <option value="">Select</option>
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                    <option value="other">Other</option>
+                  </select>
+                </label>
+              </div>
+
+              <div className='mb-5 flex items-center gap-3'>
+                <figure className='w-[60px] h-[60px] rounded-full border-2 border-solid border-primaryColor flex items-center justify-center'>
+                  <img src={avatar} alt="" className='w-full rounded-full'/>
+                </figure>
               </div>
             </form>
           </div>
