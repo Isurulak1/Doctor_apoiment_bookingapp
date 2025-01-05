@@ -76,6 +76,9 @@ const SignUp = () => {
                 <figure className='w-[60px] h-[60px] rounded-full border-2 border-solid border-primaryColor flex items-center justify-center'>
                   <img src={avatar} alt="" className='w-full rounded-full'/>
                 </figure>
+                <div className='relative w-[130px] h-[50px]'>
+                  <input type="file" name="photo" id="customFile" accept='.jpg, .png' className='absoluted top-0 left-0 w-full h-full  cursor-pointer' />
+                </div>
               </div>
             </form>
           </div>
